@@ -105,11 +105,14 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div id="react-app">
+    <div id="react-app-exercise5">
     </div>
-    <div id="react-content" class="invisible" data-title="{{ node.label }}">
-    {{ content }}
+    <div id="react-content" class="hidden" data-title="{{ node.label }}">
+      {{ content }}
     </div>
+    <div id="react-app-exercise8-container">
+    </div>
+    <div id="react-app-exercise8" data-title='{{ label }}' data-nid='{{ node.id }}'></div>
   </div>
 
 </article>
